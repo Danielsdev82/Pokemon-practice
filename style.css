@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20190601/pngtree-girly-pink-background-image_118716.jpg");
+    background-size: cover;
+}
+
+.Mascota{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: center;
+}
+.titulo {
+    color:crimson;
+    /* width: 310px; */
+    /* height: 50px; */
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.subtitulo{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.botones, .botones-ataques{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+.tarjeta-de-mokepon{
+    cursor: pointer;
+    height: 180px;
+    width: 175px;
+    background-image: url("https://img.wattpad.com/a3249ab5a078c0b51346277dcf3b5894cf29b3d5/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f5f464b3773715f4f3474744f47673d3d2d36342e313564353931666131663838373338663936303834333639363532332e6a7067?s=fit&w=720&h=720");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius:20px;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    color: black;
+}
+.tarjeta-de-mokepon img {
+    width: 80px;
+
+}
+input{
+    display: none;
+}
+input:checked + label {
+    background-image: none;
+    background-image: url("https://i.pinimg.com/originals/26/d6/aa/26d6aabf3b175aba704b0aa56bd78627.gif");
+    transition:all 1s;
+    background-position-x: center;
+}
+.centro {
+    display: flex;
+    margin: auto;
+    justify-content: center;  
+}
+.Seleccion{
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    background: transparent;
+    border: solid 2px;  
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#ataque {
+    flex-direction: column;
+    align-items: center;
+}
+.attackbutton {
+    background-color:grey ;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius:20px;
+    border-color: transparent;
+    width: 100px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+}
+#mensajes{
+    width: 280px;
+    background-color: crimson;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: bold  ;
+    flex-direction: column;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.ataques-jugador, .ataques-enemigos{
+    display: flex;
+    flex-direction:column;
+}
+
+#boton-reinciar{
+    border: none;
+    color: grey
+}
+.Ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+@media (max-width: 450px){
+    .botones, .botones-ataques{
+        flex-direction: column;
+    }
+}
